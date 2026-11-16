@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "constraint-half-life"
+version = "0.1.0"
+description = "Survival analysis of how long LLMs keep a system-prompt rule across a conversation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Akhil Reddy Jakkidi", email = "jakkidiakhilreddy2001@gmail.com" }]
+dependencies = []  # standard library only
+
+[project.urls]
+Repository = "https://github.com/Jakkidi/Half-Life-Eval"
+"Live report" = "https://jakkidi.github.io/Half-Life-Eval/"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+chl = "chl.cli:main"
+
+[tool.setuptools]
+packages = ["chl"]
+
+[tool.setuptools.package-data]
+chl = ["report_template.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
