@@ -255,10 +255,6 @@ run_eval.bat          one-click Windows runner
 - Results depend on temperature (default 0.7) and quantisation. Report both.
 - Mock results demonstrate the pipeline only and say nothing about real models.
 
-## Author
-
-Built by **Akhil Reddy Jakkidi** ([@Jakkidi](https://github.com/Jakkidi)).
-
 ## License
 
 [MIT](LICENSE)
